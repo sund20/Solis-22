@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">--> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--   --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	  <!-- Optional JavaScript -->
+
+    <title>Moodle Help</title>
+    <style>
+	.grid-container{
+		  display: grid;
+		  grid-gap:20px;
+		  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));}
+
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+.btn:focus {
+  outline: none !important;
+}
+.flex-content{	
+	display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;}
+.search-container{
+flex-grow: 1;white-space: nowrap;
+		}
+#mySearch{ 
+    float: right;
+    position: relative;	
+	}
+div.panel {
+    padding: 6px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+    </style>
+  </head>
+  <body>
+  <div class="navbar navbar-default" style="background-color:#54585A" >
+    <div class="logo-img"><a href="https://www.norquest.ca/home.aspx" target="_blank"><img src="images/Logo_dark.jpg" width="170" height="74" alt="Logo" /></a>
+ </div>
+</div>
+    <div class="px-3 py-3 pt-md-2 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Moodle Help Index</h1>
+      <p class="lead">Tipsheets and Screencasts</p>		      
+    </div><!--pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center--><!--container-->
+ <div class="container" id="myMenu1">   
+	 <h3 class="lead">For Search: select the <span class="text-info"><strong>Open All</strong></span> link and then type in the <span class="text-success"><strong>Search box</strong></span></h3>	
+	 	 <pre><em>make sure the search box is empty to see all the option</em></pre>		      
+<div class="flex-content">
+	 <div class="search-container ">
+		 <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+  </div></div>
+	 <p></p>
+<button id="openAll" class="btn btn-link lead">Open All</button>
+<button id="closeAll" class="btn btn-link lead">Close All</button>
+	 
+		 
+
+ <div class="container">   
+  <div class="row">
+	  <div class="col-sm-6 col-md-4 pl-1 pr-1">  
+      <button class="accordion">BlackBoard Ultra</button>
+      <div class="panel">
+              <ul id="myMenu" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+				 <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/BlackBoard_Ultra_User_Guide.pdf" title="BlackBoard Ultra User Guide" target="_blank">BlackBoard Ultra User Guide  <b>PDF</b></a>  || 
+                <a href="https://www.youtube.com/playlist?list=PLL1-OPwYgiR4EAchoJB0FvxEYbeP2zZV4" target="_blank"><b>Video</b></a></li>
+				<li><a href="https://youtu.be/mEHrUMTYb0k" title="Getting Started (instructors)" target="_blank">Getting Started <i>(for instructors)</i></a> || <a href="https://youtu.be/mEHrUMTYb0k" title="Getting Started with BBUltra (for instructors)" target="_blank"><b>Video</b></a></li> 
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/Mic_Camera_Settings_in_Google_Chrome_2020.pdf" title="BBUltra Mic/Camera Troubleshooting" target="_blank">Mic/Camera Troubleshooting  <b>PDF</b></a>  ||          <a href="https://youtu.be/SDziWthfX6o" target="_blank"><b>Video</b></a></li>
+				<li><a href="https://youtu.be/hL6mbzSAETs" title="Using Breakout Groups" target="_blank">Using Breakout Groups </a>  || <a href="https://youtu.be/hL6mbzSAETs" target="_blank"><b>Video</b></a>
+				</li>
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/PowerPoint_Inking_Tools_with_Blackboard_Ultra.pdf" title="PowerPoint Inking Tools With Blackboard Ultra" target="_blank">PowerPoint Inking Tools With BB Ultra  <b>PDF</b></a> 
+				</li>
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SupportedBrowsersUltra.pdf" title="Supported Browsers" target="_blank">Supported Browsers in BBUltra  <b>PDF</b></a></li>
+				<li><a href="https://youtu.be/uHIrR5bviSA" title="Managing Roles" target="_blank">Managing Roles  <b>Video</b></a></li>
+				<li><a href="https://youtu.be/8ViBXfdwxc4" title="Profile Picture in BBUltra" target="_blank">Profile Picture in BBUltra <strong>Video</strong></a></li>
+	</ul><!--myMenu-->
+	    </div><!--panel1-->
+	</div><!--pl-1 pr-1-->
+ 
+	<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+      <button class="accordion">BlackBoard Ultra for Students</button>
+      <div class="panel">
+              <ul id="myMenu2" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+				  <li><a href="https://youtu.be/57Bf2wZof1M" title="Getting Started (students)" target="_blank">Getting Started <i>(for students)</i> <b>Video</b></a></li>
+               <li><a href="https://youtu.be/D2kjrCIVm_o" title="Presenter Role" target="_blank">Presenter Role <b>Video</b></a></li>
+               <li><a href="https://youtu.be/m4LXXQc2TrU" title="Using Chat (students)" target="_blank">Using Chat (<em>for students</em>)  <b>Video</b></a></li>
+				<li> <a href="https://youtu.be/fmVONWDA6H8" title="Accessing Recordings (students)" target="_blank">Accessing Recordings  (<em>for students</em>) <b>Video</b></a></li>           
+                
+				<li><a href="https://youtu.be/8ViBXfdwxc4" title="Profile Picture in BBUltra" target="_blank">Profile Picture in BBUltra <strong>Video</strong></a></li>	
+	</ul><!--myMenu2-->
+	    </div><!--panel3-->
+	</div><!--pl-1 pr-1-->
+		
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">New to Moodle</button>
+<div class="panel">
+            <ul id="myMenu3" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		 <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Nav/FirstweekofNorQuestFaculty.pdf" title="First week of NorQuest Faculty" target="_blank">First Week at NorQuest Faculty <b>PDF</b></a></li>
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Nav/GettingAccesstoMoodle.pdf" title="Getting Access to Moodle" target="_blank">Getting Access to Moodle  <b>PDF</b></a></li>
+	<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Logging_on_to_Moodle.pdf" title="Logging on to Moodle_Dec2019" target="_blank">How to Log on to Moodle <b>PDF</b></a> || <a href="https://youtu.be/39lXmnp_H9Q" target="_blank"><b>Video</b></a>
+			  </li>	 
+                 <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Navigating_Moodle_Tools_Dec2019.pdf" title="Navigation Pane, Breadcrumbs and Blocks" target="_blank">Navigation <b>PDF</b></a> || <a href="https://youtu.be/YU_3PbbJyEo" target="_blank"><b>Video</b></a>
+                 </li>	 	 
+              
+                  <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Creating_an_Instructor_Info_Block_Dec2019.pdf" title="Creating an Instructor Block" target="_blank">Create an Instructor Block  <b>PDF</b></a> 
+                 || <a href="https://youtu.be/8IIil3iA3_o" target="_blank"><b>Video</b></a></li>
+                 <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Creating_Course_Cards_and_Default_Dashboard_Set_Up_Dec2019.pdf" title="Setting Up a Course Card" target="_blank">Set Up a Course Card <b>PDF</b></a> || <a href="https://youtu.be/PQIKLtIpXQQ" target="_blank"><b>Video</b></a>
+                 </li>	 
+
+                  <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Sending_a_Message_on_Moodle_Dec2019.pdf" title="Sending a Message to Participants on Moodle" target="_blank">Moodle Messaging <b>PDF</b></a> || <a href="https://youtu.be/TeTtgGTGcJA" target="_blank"><b>Video</b></a>
+                 </li>
+	  </ul><!--myMenu3-->
+     </div><!--panel3-->
+     </div><!--pl-1 pr-1-->
+ 
+<div class="col-sm-6 col-md-4 pl-1 pr-1"> 
+<button class="accordion">Moodle Maintenance</button>
+<div class="panel">
+              <ul id="myMenu4" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Copying_Content Using Importing_Dec2019.pdf" title="Copying Content Using the Import Function" target="_blank">Copy Content Import  <b>PDF</b></a>  || <a href="https://youtu.be/5nEHZB0WsoE" target="_blank"><b>Video</b></a></li> 	 
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Copying_Content_Using_Backup_and_Restore_Dec2019.pdf" title="Copying Content Using Backup and Restore" target="_blank">Copy Content Backup/Restore  <b>PDF</b></a> || <a href="https://youtu.be/R6TL0tN36qk" target="_blank"><b>Video</b></a></li>	 
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Backing_Up_a_Copy_of_Your_Course_to_Your_Computer_Dec2019.pdf" title="Backing Up a Copy of Your Course to Your Computer" target="_blank">Back Up Your Course  <b>PDF</b></a></li>	 
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Groups_Dec2019.pdf" title="Creating Groups" target="_blank">Groups and Groupings  <b>PDF</b></a> || <a href="https://www.youtube.com/playlist?list=PLL1-OPwYgiR5pcFVdKkOqmzQYkymcouCi" target="_blank"><b>Video</b></a></li>
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/SettingUpYourCoursetoSelfEnrol.pdf" title="Setting Up Your Course to SelfEnrol" target="_blank">Setting Up Your Course to Self Enrol <b>PDF</b></a></li>
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Extending_enrollment_Student_Moodle.pdf" title="Extending_enrollment_Student_Moodle" target="_blank">Extending Enrollment for a Student <b>PDF</b></a></li>
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Creating_a_Course_Search_Block_Dec2019.pdf" title="Creating a Course Search Block" target="_blank">Create a Course Search Block  <b>PDF</b></a> || <a href="https://youtu.be/cGkqFTpwLtI" target="_blank"><b>Video</b></a>
+               </li>	 
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/Maintenance/PSConnectionandMoodleTroubleshooting.pdf" title="PS and Moodle Troubleshooting" target="_blank">PS and Moodle Troubleshooting <b>PDF</b></a>
+				</li>            
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/Maintenance/MoodleRolesandMoodleLifeCycle.pdf" title="Moodle Roles and Moodle Life Cycle" target="_blank">Moodle Roles and Moodle Life Cycle <b>PDF</b></a>
+				</li>    
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/Maintenance/Metacourse_April2020.pdf" title="Meta Course" target="_blank">Meta Course <b>PDF</b></a>
+				</li>
+	  </ul><!--myMenu4-->
+     </div><!--panel4-->
+     </div><!--pl-1 pr-1-->
+	  		
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Assignments</button>
+<div class="panel">
+      <ul id="myMenu5" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		   <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/Overview.pdf" target="_blank">Overview <b>PDF</b></a> </li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/AssignmentSettingsNEW.pdf" target="_blank">Add, Edit or Delete <b>PDF</b></a> || <a href="https://youtu.be/f28fDpOakis" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/DownloadAllAssignmentsNEW.pdf" target="_blank">Download All Assignment <b>PDF</b></a> || <a href="https://youtu.be/j70k6mSxLBI" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/UploadAllAssignments.pdf" target="_blank">Upload All Assignments <b>PDF</b></a> || <a href="https://youtu.be/aHS5-JMs9yE" target="_blank"><b>Video</b></a></li>
+			 <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/UsingMarkingGuidesGradeAssignm.pdf" target="_blank">Using Marking Guides <b>PDF</b></a> || <a href="https://youtu.be/2yHQHSfQhuM" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Assignments/Rubrics.pdf" target="_blank">Using Rubrics <b>PDF</b></a> || <a href="https://youtu.be/gXThqFG9XMs" target="_blank"><b>Video</b></a></li>
+			  <li><a href="https://media.norquest.ca/MDS/MoodleHelp/Assignments/UserOverrides.pdf" target="_blank">User Overrides <b>PDF</b></a> || <a href="https://youtu.be/eOXI3dyg_sg" target="_blank"><b>Video</b></a></li>
+	  </ul><!--myMenu5-->
+     </div><!--panel5-->
+     </div><!--pl-1 pr-1-->
+	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Forums</button>
+<div class="panel">
+      <ul id="myMenu6" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		  <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Forums/AddEditorDeleteaForum.pdf" title="Add, Edit or Delete Forums" target="_blank">Add, Edit or Delete a Forum <b>PDF</b></a> || <a href="https://youtu.be/bc4usTuxINk" target="_blank"><b>Video</b></a></li>
+			<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Forums/ForumTypesinMoodle.pdf" title="Forum Types and Settings" target="_blank">Forum Types & Settings <b>PDF</b></a> ||  <a href="https://youtu.be/7QwIk8U61Vw" target="_blank"><b>Video</b></a></li>
+			<li><a href="https://youtu.be/zrWxzWsoePA" title="Add a Forum post" target="_blank">Add a Forum Post <b>Video</b></a></li>
+			<li><a href="https://youtu.be/7vHJtIC9ixE" title="Notification Preferences" target="_blank">Notification Preferences <b>Video</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Forums/AddEditorDeleteaForum.pdf" title="Add, Edit or Delete Forums" target="_blank">Add, Edit or Delete a Forum <b>PDF</b></a> || <a href="https://youtu.be/bc4usTuxINk" target="_blank"><b>Video</b></a></li>
+			<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Forums/ForumTypesinMoodle.pdf" title="Forum Types and Settings" target="_blank">Forum Types & Settings <b>PDF</b></a> ||  <a href="https://youtu.be/7QwIk8U61Vw" target="_blank"><b>Video</b></a></li>
+			<li><a href="https://youtu.be/zrWxzWsoePA" title="Add a Forum post" target="_blank">Add a Forum Post <b>Video</b></a></li>
+			<li><a href="https://youtu.be/7vHJtIC9ixE" title="Notification Preferences" target="_blank">Notification Preferences <b>Video</b></a></li>
+			  <li><a href="https://youtu.be/bTEDvTelGJU" title="Groups in Forums" target="_blank">Groups in Forums <b>Video</b></a></li>
+			  <li><a href="https://youtu.be/bTEDvTelGJU" title="Groups in Forums" target="_blank">Groups in Forums <b>Video</b></a></li>
+	  </ul><!--myMenu6-->
+     </div><!--panel6-->
+     </div><!--pl-1 pr-1-->
+	  	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Quizzes</button>
+<div class="panel">
+      <ul id="myMenu7" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/AddQuizSettings.pdf" title="Add a Quiz" target="_blank">Add, Edit or Delete a Quiz <b>PDF</b></a> || <a href="https://youtu.be/oITdMJ1nTiQ/" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/QuizAddQuizquestionsEditing.pdf" title="Quiz Add Quiz questions" target="_blank">Add Quiz Questions <b>PDF</b></a> || <a href="https://youtu.be/ufMsXVoPPkc" target="_blank"><b>Video</b></a></li>
+            <li><a href="https://youtu.be/ui7C2pcTLSg" title="Adding Question Types" target="_blank">MC, TF, Match & Essay Questions </a>  || 
+		    <a href="https://youtu.be/ui7C2pcTLSg" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/DragandDrop.pdf" title="DragAndDrop2" target="_blank">Drag &amp; Drop <b>PDF</b></a></li>
+             <li><a href="https://youtu.be/s4QVbG-U3ug" title="Audio and Video Response Questions" target="_blank">Audio/Video Reponse Questions </a>  || 
+            <a href="https://youtu.be/hL6mbzSAETs" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/ExamNotifications.pdf" title="Exam Notifications" target="_blank">Exam Notifications <b>PDF</b></a> || 
+             <a href="https://www.youtube.com/" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/SettingupReviewQuizzes.pdf" title="Setting up Review Quizzes" target="_blank">Set up Review Quizzes <b>PDF</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/StudentviewofaMoodleQuiz.pdf" title="Student view of a Moodle Quiz" target="_blank">Student View of Quiz  <b>PDF</b></a> || 
+             <a href="https://youtu.be/_NuDyFUcJe4" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/UserOverridesQuizzes.pdf" title="User Overrides Quizzes" target="_blank">User Overrides Quizzes  <b>PDF</b></a> || 
+             <a href="https://youtu.be/oTNcQswsrl4" target="_blank"><b>Video</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Quiz/ConsiderationsForOnlineExams.pdf" title="User Overrides Quizzes" target="_blank">Online Exam Considerations  <b>PDF</b></a></li>
+             <li><a href="https://youtu.be/wo0B7C8BXlA" title="Managing Quiz Attempts" target="_blank">Managing Quiz Attempts <b>Video</b></a></li>
+             <li><a href="https://youtu.be/KpGLhvB8C_g" title="Short Answer" target="_blank">Short Answer <b>Video</b></a></li>
+             <li><a href="https://youtu.be/MTqY-3v1M5E" title="Exporting and Importing a Single Quiz" target="_blank">Export and Import Single Quiz <b>Video</b></a></li>
+	  </ul><!--myMenu7-->
+     </div><!--panel7-->
+     </div><!--pl-1 pr-1-->
+	  	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Moodle Activities</button>
+<div class="panel">
+      <ul id="myMenu8" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		     <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle Activities/Chats.pdf" title="Chats" target="_blank">Chats <b>PDF</b></a> || <a href="https://youtu.be/fWGjg6s4bno" target="_blank"><b>Video</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle Activities/Choice.pdf" title="Choice" target="_blank">Choice <b>PDF</b></a> || <a href="https://youtu.be/OdkeDrWcsoc" target="_blank"><b>Video</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle Activities/Feedback.pdf" title="Feedback" target="_blank">Feedback <b>PDF</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle Activities/JournalActivity.pdf" title="Journal Activity" target="_blank">Journal Activity <b>PDF</b></a> || <a href="https://youtu.be/pTq_OFwoz2Q" target="_blank"><b>Video</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle Activities/Lessons.pdf" title="Lessons" target="_blank">Lessons <b>PDF</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle%20Activities/Glossaries.pdf" title="Glossaries" target="_blank">Glossaries <b>PDF</b></a></li>
+            <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Moodle%20Activities/WikiQuickSheet.pdf" title="WikiQuickSheet" target="_blank">Wiki Quick Sheet <b>PDF</b></a></li>
+	  </ul><!--myMenu8-->
+     </div><!--panel8-->
+     </div><!--pl-1 pr-1-->
+	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Moodle Resources</button>
+<div class="panel">
+      <ul id="myMenu9" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		    <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourceBooks.pdf" title="Resource Books" target="_blank">Books <b>PDF</b></a> || 
+               <a href="https://youtu.be/45y2mLoi1R8" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourceFile.pdf" title="Resource File" target="_blank">File <b>PDF</b></a> || 
+               <a href="https://youtu.be/hQBmzreHVmE" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourceFolders.pdf" title="Resource Folders" target="_blank">Folders <b>PDF</b></a> || 
+               <a href="https://youtu.be/kT2emzByi2k" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourceLabel.pdf" title="Resource Label" target="_blank">Label <b>PDF</b></a> || 
+               <a href="https://youtu.be/KcH0awENhl0" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourcePages.pdf" title="Resource Pages" target="_blank">Pages <b>PDF</b></a> || 
+               <a href="https://youtu.be/l199mTdokP4" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/ResourceURLs.pdf" title="Resource URLs" target="_blank">URLs <b>PDF</b></a> || 
+               <a href="https://youtu.be/V1BBuwLVZoI" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Resources/RSSFeedsonMoodle.pdf" title="Resource URLs" target="_blank">RSS Feeds on Moodle  <b>PDF</b></a> || 
+               <a href="https://youtu.be/I6LKPiZSLF0" target="_blank"><b>Video</b></a></li>
+	  </ul><!--myMenu9-->
+     </div><!--panel9-->
+     </div><!--pl-1 pr-1-->
+	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Grade Book</button>
+<div class="panel">
+      <ul id="myMenu10" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Grade Book/GradeBook.pdf" title="Grade Book" target="_blank">Grade Book <b>PDF</b></a> || <a href="https://youtu.be/yYNkb_ez75E" title="Grade Book V" target="_blank"><b>Video</b></a></li>
+              <li><a href="https://youtu.be/V8Z1yzQBv_E" title="Accessing your Gradebook" target="_blank">Accessing your Gradebook <b>Video</b></a></li>
+              <li><a href="https://youtu.be/BmrI-HzFscg" title="Activating Weighed Categories and Items" target="_blank">Activating Weighed Categories and Items <b>Video</b></a></li>
+              <li><a href="https://youtu.be/WyY9dGi-rvg" title="Adding Categories" target="_blank">Adding Categories <b>Video</b></a></li>
+              <li><a href="https://youtu.be/c-Is48TmSAc" title="Moving Items into a Category" target="_blank">Moving Items into a Category <b>Video</b></a></li>
+              <li><a href="https://youtu.be/skJXsG9mGwY" title="Creating New Items" target="_blank">Creating New Items <b>Video</b></a></li>
+              <li><a href="https://youtu.be/pSwm9ndd57g" title="Adding marks" target="_blank">Adding marks <b>Video</b></a></li>
+              <li><a href="https://youtu.be/_IM_1Mfl1K0" title="Student's View (User report)" target="_blank">Student&rsquo;s View (User report) <b>Video</b></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Grade Book/ExtraCreditApril20.pdf" title="Extra Credit in Gradebook" target="_blank">Extra Credit in Gradebook <b>PDF</b></a></li>
+              <li><a href="https://youtu.be/LRGaRB6Yt2s" title="Exporting Grades" target="_blank">Exporting Grades <b>Video</b></a></li>
+              <li><a href="https://youtu.be/x9f5r-hGNW4" title="Turning off gradebook" target="_blank">Turning off gradebook <b>Video</b></a></li>
+	  </ul><!--myMenu10-->
+     </div><!--panel10-->
+     </div><!--pl-1 pr-1-->	
+	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Moodle Minute Tips/Tricks</button>
+<div class="panel">
+      <ul id="myMenu11" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		       <li><a href="https://youtu.be/AwMIWI2rVaI" title="Stealth mode" target="_blank">Stealth mode <b>Video</b></a></li>
+                <li><a href="https://youtu.be/Mbe0oOePJhg" title="Embedding videos" target="_blank">Embedding videos <b>Video</b></a></li>
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Side%20Blocks/AttendancePlugin.pdf" title="Attendance activity" target="_blank">Attendance activity <b>PDF</b></a> || <a href="https://youtu.be/X9OUytmciy4" title="Attendance activity" target="_blank"><strong>Video</strong></a></li>
+               <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Side%20Blocks/TheQuickmailBlockMoodle.pdf" title="Quickmail Block" target="_blank">Quickmail Block <b>PDF</b></a> || <a href="https://youtu.be/Nb1g-Z9ayvw" title="Quickmail Block" target="_blank"><strong>Video</strong></a></li>
+				<li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/Side%20Blocks/AccessRestrictions(NEW).pdf" title="Quickmail Block" target="_blank">Access Restrictions <b>PDF</b></a>
+               </li>   
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/Moodle_Badges_Dec2019.pdf" title="Setting Up Moodle Badges" target="_blank">Set Up Moodle Badges  <b>PDF</b></a></li>	 
+              <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/SettingUpaCourseandCourseSettings/CompletionProgressBar.pdf" title="Setting Up Moodle Badges" target="_blank">Completion Progress Bar tip sheet <b>PDF</b></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/CourseSet/NavigatingMoodle/Changing_Moodle_Dashboard_Dec2019.pdf" title="Changing Your Course Overview from Card Format to Listed Format" target="_blank">Change Overview: List Format <b>PDF</b></a> || <a href="https://youtu.be/8MgQ_7J1WmM" target="_blank"><b>Video</b></a>
+             </li>
+                <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/YouTubeGoogle/Moving_Content_from_H5P_Moodle.pdf" title="create a new H5P block" target="_blank">Moving Content from H5P.org <strong>PDF</strong></a> || <a href="https://youtu.be/SHrGtAK29xo" title="create a new H5P block" target="_blank"><strong>Video</strong></a></li>
+	  </ul><!--myMenu11-->
+     </div><!--panel11-->
+     </div><!--pl-1 pr-1-->
+	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">YouTube/Google Drive</button>
+<div class="panel">
+      <ul id="myMenu12" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+          <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/YouTubeGoogle/GoogleDriveVideosStudents.pdf" title="Google Upload &amp; File Sharing PDF" target="_blank">Google Upload & File Sharing <b>PDF</b></a> || <a href="https://youtu.be/0XGsEOUXLvw" target="_blank"><b>Video</b></a></li>
+    	  <li><a href="https://youtu.be/Bm-yMgsrtEs" title="Compressing Files Video" target="_blank">Compressing Files <b>Video</b></a></li>
+    	     <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/YouTubeGoogle/Howto_Upload_Video_Google_Photos.pdf" title="Google Photos PDF" target="_blank">Google Photos <strong>PDF</strong></a> || <a href="https://youtu.be/1X92bwvEN5g" title="Google Photos PDF" target="_blank"><strong>Video</strong></a></li>
+             <li><a href="https://youtu.be/eur6pjSlJAc" title="Create a channel" target="_blank">Create a channel <strong>Video</strong></a></li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/YouTubeGoogle/Howto_Upload_Video_YouTube.pdf" title="Upload a video" target="_blank">Upload a video <strong>PDF</strong></a> || <a href="https://youtu.be/hNCXf40uv8E" title="Upload a video" target="_blank"><strong>Video</strong></a> </li>
+             <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/YouTubeGoogle/Howto_Delete_Video_YouTube.pdf" title="Delete a video" target="_blank">Delete a video <strong>PDF</strong></a> || <a href="https://youtu.be/Vaf5Zownafw" title="Delete a video" target="_blank"><strong>Video</strong></a></li>
+             <li><a href="https://www.youtube.com/watch?v=QAkxixHyIGk&feature=youtu.be" title="Export captions from YouTube Video" target="_blank">Export captions from YouTube <strong>Video</strong></a></li>
+	  </ul><!--myMenu12-->
+     </div><!--panel12-->
+     </div><!--pl-1 pr-1-->
+	  	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">VoiceThread</button>
+<div class="panel">
+      <ul id="myMenu13" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+        <li><a href="https://youtu.be/0PRL5SzJJ90" title="Add, edit or delete a VT" target="_blank">Add, Edit or Delete a VT <strong>PDF</strong></a></li>
+          <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/VoiceT/CreateaVT_SubmitaCommetn.pdf" title="Creating a VoiceThread for Students to Commen" target="_blank">Create a VoiceThread  <strong>PDF</strong></a> || <a href="https://youtu.be/souR98LtmaY" title="Creating a VoiceThread for Students to Commen" target="_blank"><strong>Video</strong></a></li>
+          <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/VoiceT/RecordingCommentsinVT.pdf" title="Recording a Comment" target="_blank">Recording a Comment <strong>PDF</strong></a> || <a href="https://youtu.be/3gt0LiWQlsk" title="Recording a Comment" target="_blank"><strong>Video</strong></a></li>
+          <li><a href="https://youtu.be/3gt0LiWQlsk" title="Doodling Tool Video" target="_blank">Replying to another comment <strong>Video</strong></a></li>
+          <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/VoiceT/CommentModerationVTSubP.pdf" title="Comment Moderation" target="_blank">Comment Moderation  <strong>PDF</strong></a> || <a href="https://youtu.be/69fwTSqS9-M" title="Comment Moderation" target="_blank"><strong>Video</strong></a></li>
+          <li><a href="https://youtu.be/QsNfDEBhnLE" title="Doodling Tool Video" target="_blank">Doodling Tool <strong>Video</strong></a></li>
+          <li><a href="https://media.norquest.ca/MDS/Programs/MoodleHelp/VoiceT/ReusingVoiceThreads.pdf" title="Reusing VoiceThreads " target="_blank">Reusing VoiceThreads <strong>PDF</strong></a> || <a href="https://youtu.be/0PRL5SzJJ90" title="Reusing VoiceThreads" target="_blank"><strong>Video</strong></a></li>
+	  </ul><!--myMenu13-->
+     </div><!--panel13-->
+     </div><!--pl-1 pr-1-->
+	  	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Library Moodle Tools</button>
+<div class="panel">
+      <ul id="myMenu14" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		   <li><a href="https://libguides.norquest.ca/ld.php?content_id=34904553" title="Library Resources Block" target="_blank">Library Resources  Block <strong>PDF</strong></a> || <a href="https://screencast-o-matic.com/watch/cYh2DYk1El" title="Library Resources Block" target="_blank"><strong>Video</strong></a></li>
+              <li><a href="https://libguides.norquest.ca/ld.php?content_id=34904542" title="Research Guides Automagic Tool" target="_blank">Research Guides  Automagic Tool <strong>PDF</strong></a> || <a href="https://youtu.be/PwncxYKixK0" title="Research Guides Automagic Tool" target="_blank"><strong>Video</strong></a></li>
+              <li><a href="https://libguides.norquest.ca/ld.php?content_id=19393035" title="Research Guides Tool" target="_blank">Research Guides  Tool <strong>PDF</strong></a> || <a href="https://youtu.be/zG8V_pumrtA" title="Research Guides Tool" target="_blank"><strong>Video</strong></a></li>
+              <li><a href="https://libguides.norquest.ca/ld.php?content_id=26964432" title="Films on Demand LTI" target="_blank">Films on Demand LTI <strong>PDF</strong></a> || <a href="https://youtu.be/wBRvI55yBL4" title="Films on Demand LTI " target="_blank"><strong>Video</strong></a></li>
+				<li><a href="https://libguides.norquest.ca/ld.php?content_id=35326541" title="Library Chat Box" target="_blank">Library Chat Box <strong>PDF</strong></a> || <a href="https://youtu.be/jfSpfPFtdXk" title="Library Chat Box" target="_blank"><strong>Video</strong></a></li>
+	  </ul><!--myMenu14-->
+     </div><!--panel14-->
+     </div><!--pl-1 pr-1-->	  	  
+	  	  
+<div class="col-sm-6 col-md-4 pl-1 pr-1">  
+<button class="accordion">Moodle Block Training</button>
+<div class="panel">
+      <ul id="myMenu15" class="list-unstyled mt-3 ml-3 mb-4 text-left">
+		    <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/AddingCDPTool/AddingCDPTool.mp4" title="create a new H5P block" target="_blank">Adding CDP Tool-Articulate <strong>Video</strong></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/CourseLevel/CourseLevel.mp4" title="create a new H5P block" target="_blank">Course Level-Articulate <strong>Video</strong></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/DeanDashboard/DeanDashboard.mp4" title="create a new H5P block" target="_blank">Dean Dashboard-Articulate <strong>Video</strong></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/DeanChairReports/DeanChairReports.mp4" title="create a new H5P block" target="_blank">Dean-Chair Reports <strong>Video</strong></a></li>
+			<li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/EditingPhase/EditingPhase.mp4" title="create a new H5P block" target="_blank">Editing Phase-Articulate <strong>Video</strong></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/EmailTemplate/EmailTemplate.mp4" title="create a new H5P block" target="_blank">Email Template-Articulate <strong>Video</strong></a></li>
+              <li><a href="https://media.norquest.ca/MDS/Programs/Moodlehelp/MoodleBlock/EnrollUsers/EnrollUsers.mp4" title="create a new H5P block" target="_blank">Enroll Users <strong>Video</strong></a></li>
+	  </ul><!--myMenu15-->
+     </div><!--panel15-->
+     </div><!--pl-1 pr-1-->	 	 
+    </div> 
+  </div>
+</div>
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+	if( !this.classList.contains('active') ){
+    	closeAll();
+    }	
+  this.classList.toggle("active");
+	  		
+    var panel = this.nextElementSibling;	
+    if (panel.style.maxHeight){
+//	panel.style.display = "none";
+      panel.style.maxHeight = null;
+    } else {
+//		panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+
+function openAll(){
+    for (i = 0; i < acc.length; i++) {
+    	acc[i].classList.add("active");
+        acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + "px";
+    }
+}
+
+function closeAll(){
+	 for (i = 0; i < acc.length; i++) {
+    	acc[i].classList.remove("active");
+        acc[i].nextElementSibling.style.maxHeight = null;
+    }
+}
+
+document.getElementById( 'openAll' ).addEventListener( 'click', openAll);
+document.getElementById( 'closeAll' ).addEventListener( 'click', closeAll);
+
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+ ul = document.getElementById("myMenu1"); 
+//ul = document.getElementById("myMenu2");
+ //ul = document.getElementById("myMenu3");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<form class="form-inline my-2 my-lg-0" id="coursesearch" action="https://myclass.norquest.ca/course/search.php" method="get">
+	<input class="form-control mr-sm-2" id="coursesearchbox" size="30" name="search" value="" placeholder="Search Courses" type="text">
+	<button style="margin-right:10px;" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+	<a href="https://myclass.norquest.ca/course/index.php">
+		<button class="btn btn-default my-2 my-sm-0" type="button">Course Categories</button>
+	</a>
+</form>
